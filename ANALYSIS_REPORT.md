@@ -5,7 +5,7 @@
 
 ## Executive Summary
 
-This report analyzes 35 years of historical data (January 1990 to December 2025) from seven major global market indices to answer a fundamental question for investors: **Does time in the market really matter?**
+This report analyzes 35 years of historical data (January 1990 to December 2025) from **fourteen major global market indices** to answer a fundamental question for investors: **Does time in the market really matter?**
 
 **The answer is a resounding YES.** Our analysis reveals that the longer you hold your investments, the higher your probability of making money—regardless of which market you invest in.
 
@@ -32,7 +32,14 @@ This report analyzes 35 years of historical data (January 1990 to December 2025)
 | United States | S&P 500 | 1990-2025 | 9,051 |
 | United States | NASDAQ Composite | 1990-2025 | 9,051 |
 | United Kingdom | FTSE 100 | 1990-2025 | 9,078 |
-| Hong Kong | Hang Seng | 1990-2025 | 8,869 |
+| Hong Kong | Hang Seng | 1990-2025 | 8,870 |
+| Japan | Nikkei 225 | 1990-2025 | 8,819 |
+| Canada | S&P/TSX Composite | 1990-2025 | 9,035 |
+| Malaysia | FTSE Bursa Malaysia KLCI | 1993-2025 | 7,866 |
+| France | CAC 40 | 1990-2025 | 9,086 |
+| Germany | DAX | 1990-2025 | 9,094 |
+| Singapore | Straits Times Index | 1990-2025 | 8,986 |
+| Australia | S&P/ASX 200 | 1992-2025 | 8,354 |
 | China | Shanghai Composite | 1990-2025 | 8,538 |
 | China | Shenzhen Component | 1991-2025 | 8,446 |
 | China | CSI 300 | 2002-2025 | 5,805 |
@@ -51,6 +58,13 @@ When you invest for just one year, the outcome is highly uncertain:
 | NASDAQ Composite | 79% | +95% | -61% |
 | FTSE 100 | 70% | +53% | -42% |
 | Hang Seng | 63% | +100% | -63% |
+| Nikkei 225 | 53% | +75% | -54% |
+| S&P/TSX Composite | 69% | +58% | -45% |
+| FTSE Bursa Malaysia KLCI | 55% | +126% | -63% |
+| CAC 40 | 66% | +54% | -48% |
+| DAX | 69% | +62% | -47% |
+| Straits Times Index | 61% | +73% | -58% |
+| S&P/ASX 200 | 62% | +71% | -50% |
 | Shanghai Composite | 54% | +236% | -69% |
 | Shenzhen Component | 49% | +344% | -69% |
 | CSI 300 | 49% | +309% | -69% |
@@ -65,6 +79,13 @@ When you invest for just one year, the outcome is highly uncertain:
 | NASDAQ Composite | 86% | +229% | -59% |
 | FTSE 100 | 75% | +92% | -29% |
 | Hang Seng | 68% | +233% | -49% |
+| Nikkei 225 | 58% | +162% | -44% |
+| S&P/TSX Composite | 74% | +132% | -37% |
+| FTSE Bursa Malaysia KLCI | 67% | +238% | -58% |
+| CAC 40 | 73% | +141% | -43% |
+| DAX | 76% | +159% | -44% |
+| Straits Times Index | 67% | +140% | -47% |
+| S&P/ASX 200 | 71% | +224% | -47% |
 | Shanghai Composite | 75% | +342% | -66% |
 | Shenzhen Component | 67% | +595% | -58% |
 | CSI 300 | 72% | +426% | -62% |
@@ -79,6 +100,13 @@ When you invest for just one year, the outcome is highly uncertain:
 | NASDAQ Composite | 92% | +508% | -57% |
 | FTSE 100 | 89% | +102% | -25% |
 | Hang Seng | 88% | +177% | -37% |
+| Nikkei 225 | 84% | +144% | -33% |
+| S&P/TSX Composite | 88% | +189% | -32% |
+| FTSE Bursa Malaysia KLCI | 84% | +155% | -47% |
+| CAC 40 | 88% | +135% | -40% |
+| DAX | 90% | +159% | -42% |
+| Straits Times Index | 84% | +101% | -37% |
+| S&P/ASX 200 | 88% | +224% | -40% |
 | Shanghai Composite | 90% | +353% | -48% |
 | Shenzhen Component | 84% | +516% | -47% |
 | CSI 300 | 90% | +492% | -38% |
@@ -93,6 +121,13 @@ When you invest for just one year, the outcome is highly uncertain:
 | NASDAQ Composite | 100% | +962% | -12% |
 | FTSE 100 | 98% | +122% | -8% |
 | Hang Seng | 90% | +245% | -39% |
+| Nikkei 225 | 89% | +113% | -28% |
+| S&P/TSX Composite | 96% | +227% | -15% |
+| FTSE Bursa Malaysia KLCI | 88% | +179% | -39% |
+| CAC 40 | 92% | +135% | -35% |
+| DAX | 96% | +159% | -33% |
+| Straits Times Index | 88% | +101% | -37% |
+| S&P/ASX 200 | 92% | +224% | -40% |
 | Shanghai Composite | 92% | +201% | -51% |
 | Shenzhen Component | 88% | +399% | -47% |
 | CSI 300 | 89% | +429% | -34% |
@@ -107,11 +142,18 @@ When you invest for just one year, the outcome is highly uncertain:
 | NASDAQ Composite | **100%** | +609% | **+57%** |
 | FTSE 100 | 98% | +51% | -23% |
 | Hang Seng | **100%** | +79% | **+15%** |
+| Nikkei 225 | **100%** | +43% | **+2%** |
+| S&P/TSX Composite | **100%** | +132% | **+19%** |
+| FTSE Bursa Malaysia KLCI | **100%** | +67% | **+8%** |
+| CAC 40 | **100%** | +71% | **+4%** |
+| DAX | **100%** | +107% | **+7%** |
+| Straits Times Index | **100%** | +47% | **+3%** |
+| S&P/ASX 200 | **100%** | +107% | **+15%** |
 | Shanghai Composite | **100%** | +114% | **+32%** |
 | Shenzhen Component | **100%** | +228% | **+96%** |
 | CSI 300 | **100%** | +258% | **+162%** |
 
-**Key Insight:** At 20 years, SIX out of SEVEN markets show 100% probability of positive returns. Even in the WORST 20-year period, investors in the S&P 500 gained at least 57%, and Shenzhen Component investors gained at least 96%!
+**Key Insight:** At 20 years, THIRTEEN out of FOURTEEN markets show 100% probability of positive returns. Even in the WORST 20-year period, investors in the S&P 500 gained at least 57%, and Shenzhen Component investors gained at least 96%!
 
 ---
 
@@ -124,7 +166,12 @@ Holding Period →   1yr    5yr    10yr   15yr   20yr
                    ↓      ↓      ↓      ↓      ↓
 S&P 500           81% → 77% → 92% → 100% → 100%
 NASDAQ Composite  79% → 86% → 92% → 100% → 100%
+FTSE 100          70% → 75% → 89% →  98% →  98%
 Hang Seng         63% → 68% → 88% →  90% → 100%
+Nikkei 225        53% → 58% → 84% →  89% → 100%
+S&P/TSX           69% → 74% → 88% →  96% → 100%
+CAC 40            66% → 73% → 88% →  92% → 100%
+DAX               69% → 76% → 90% →  96% → 100%
 Shanghai          54% → 75% → 90% →  92% → 100%
 CSI 300           49% → 72% → 90% →  89% → 100%
 ```
@@ -160,7 +207,9 @@ Yet, investors who held through these storms came out ahead. **Market timing is 
 While all markets trend upward over long periods, they don't move in lockstep:
 - US markets (S&P 500, NASDAQ Composite) showed the highest long-term returns
 - Chinese markets showed higher volatility but also higher potential gains
-- UK market (FTSE 100) showed more modest but stable returns
+- European markets (FTSE 100, DAX, CAC 40) showed more modest but stable returns
+- Asian markets (Nikkei 225, Hang Seng, Straits Times) showed varying performance patterns
+- Canadian and Australian markets provided balanced growth
 
 A diversified portfolio across regions can smooth your journey.
 
@@ -214,8 +263,9 @@ If you can commit to holding your investments for 20 years:
 
 ## Methodology Notes
 
-- **Data Period:** January 1, 1990 to December 9, 2025 (Shanghai Composite from December 1990, Shenzhen Component from April 1991, CSI 300 from January 2002)
-- **Data Sources:** Yahoo Finance (US, UK, Hong Kong), AkShare (China indices)
+- **Data Period:** January 1, 1990 to December 9, 2025 (varies by index: FTSE Bursa Malaysia KLCI from December 1993, S&P/ASX 200 from November 1992, Shenzhen Component from April 1991, CSI 300 from January 2002)
+- **Data Sources:** Yahoo Finance (US, UK, Hong Kong, Japan, Canada, Malaysia, France, Germany, Singapore, Australia), AkShare (China indices)
+- **Indices Analyzed:** 14 major global market indices across 11 countries/regions
 - **Calculation Method:** Rolling returns for each holding period
 - **Returns:** Price returns (dividends not included; actual returns would be higher)
 

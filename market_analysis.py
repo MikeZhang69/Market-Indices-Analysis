@@ -16,6 +16,17 @@ class MarketIndexAnalyzer:
             '^IXIC': 'NASDAQ Composite',    # US - Nasdaq Composite Index
             '^FTSE': 'FTSE 100',           # UK - Financial Times Stock Exchange 100
             '^HSI': 'Hang Seng',           # Hong Kong - Hang Seng Index
+            '^N225': 'Nikkei 225',          # Japan - Nikkei 225
+            '^GSPTSE': 'S&P/TSX Composite', # Canada - S&P/TSX Composite
+            '^KLSE': 'FTSE Bursa Malaysia KLCI',  # Malaysia - FBM KLCI (primary ticker)
+            '^FCHI': 'CAC 40',             # France - CAC 40
+            '^GDAXI': 'DAX',               # Germany - DAX
+            '^STI': 'Straits Times Index', # Singapore - STI
+            '^AXJO': 'S&P/ASX 200',        # Australia - S&P/ASX 200
+        }
+        # Optional Yahoo Finance fallback tickers for select indices
+        self.yf_fallbacks = {
+            'FTSE Bursa Malaysia KLCI': ['^FBMKLCI'],
         }
         # China indices via AkShare (better historical data)
         self.akshare_china_indices = {
@@ -29,11 +40,11 @@ class MarketIndexAnalyzer:
             '.IXIC': 'NASDAQ Composite',    # NASDAQ Composite via Sina
         }
         self.data = pd.DataFrame()
-        self.start_date = '2000-01-01'
+        self.start_date = '1950-09-07'
         self.end_date = datetime.now().strftime('%Y-%m-%d')
     
     def fetch_data(self):
-        """Fetch historical market data for all indices from Jan 1, 2000 to present"""
+        """Fetch historical market data for all indices between the configured dates"""
         print(f"Fetching data from {self.start_date} to {self.end_date}")
         print("-" * 50)
         
@@ -66,6 +77,36 @@ class MarketIndexAnalyzer:
             except Exception as e:
                 print(f"  ✗ {name}: Yahoo Finance error")
                 failed_yf.append(name)
+
+        # Attempt Yahoo Finance fallbacks for tickers with known alternates
+        if failed_yf:
+            print("\nRetrying failed indices with Yahoo Finance fallback tickers...")
+            still_failed = []
+            for name in failed_yf:
+                fallback_tickers = self.yf_fallbacks.get(name, [])
+                recovered = False
+                for fb_ticker in fallback_tickers:
+                    try:
+                        df = yf.download(fb_ticker, start=self.start_date, end=self.end_date, progress=False, auto_adjust=True)
+                        if not df.empty:
+                            if isinstance(df.columns, pd.MultiIndex):
+                                if 'Close' in df.columns.get_level_values(0):
+                                    close_col = df['Close'].iloc[:, 0]
+                                else:
+                                    close_col = df.iloc[:, 0]
+                            else:
+                                close_col = df['Close'] if 'Close' in df.columns else df.iloc[:, 0]
+
+                            close_series = pd.Series(close_col.values, index=close_col.index, name=name)
+                            all_data[name] = close_series
+                            print(f"  ✓ {name}: recovered via fallback ticker {fb_ticker}")
+                            recovered = True
+                            break
+                    except Exception:
+                        continue
+                if not recovered:
+                    still_failed.append(name)
+            failed_yf = still_failed
         
         # Try AkShare as fallback for failed US indices
         if failed_yf:
@@ -117,7 +158,8 @@ class MarketIndexAnalyzer:
             return None, None
         
         # Calculate daily returns
-        daily_returns = self.data.pct_change().dropna()
+        # Avoid implicit forward-fill default in future pandas versions
+        daily_returns = self.data.pct_change(fill_method=None).dropna()
         
         # Calculate cumulative returns (normalized to start at 1)
         cumulative_returns = (1 + daily_returns).cumprod()
@@ -196,7 +238,7 @@ class MarketIndexAnalyzer:
                 cum_ret = (1 + daily_ret).cumprod()
                 plt.plot(cum_ret.index, cum_ret, label=column, linewidth=1.5)
         
-        plt.title('Cumulative Returns of Major Market Indices (2000-Present)', fontsize=16)
+        plt.title('Cumulative Returns of Major Market Indices', fontsize=16)
         plt.xlabel('Date', fontsize=12)
         plt.ylabel('Cumulative Returns', fontsize=12)
         plt.legend(loc='upper left')
@@ -312,7 +354,9 @@ class MarketIndexAnalyzer:
         """Save the fetched data to CSV for further analysis"""
         # Reorder columns as requested
         desired_order = [
-            'Shanghai Composite', 'Shenzhen Component', 'CSI 300', 
+            'Shanghai Composite', 'Shenzhen Component', 'CSI 300',
+            'Nikkei 225', 'S&P/TSX Composite', 'FTSE Bursa Malaysia KLCI',
+            'CAC 40', 'DAX', 'Straits Times Index', 'S&P/ASX 200',
             'S&P 500', 'NASDAQ Composite', 'FTSE 100', 'Hang Seng'
         ]
         
@@ -352,7 +396,7 @@ if __name__ == "__main__":
     print()
     
     # Get date range from user
-    default_start = '2000-01-01'
+    default_start = '1950-09-07'
     default_end = datetime.now().strftime('%Y-%m-%d')
     
     print("Enter date range for analysis (press Enter for default):")
