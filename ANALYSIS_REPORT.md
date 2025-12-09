@@ -1,11 +1,11 @@
-# Time Matters: A 25-Year Analysis of Global Market Indices
-## How Holding Period Affects Investment Returns (2000-2025)
+# Time Matters: A 35-Year Analysis of Global Market Indices
+## How Holding Period Affects Investment Returns (1990-2025)
 
 ---
 
 ## Executive Summary
 
-This report analyzes 25 years of historical data (January 2000 to December 2025) from seven major global market indices to answer a fundamental question for investors: **Does time in the market really matter?**
+This report analyzes 35 years of historical data (January 1990 to December 2025) from seven major global market indices to answer a fundamental question for investors: **Does time in the market really matter?**
 
 **The answer is a resounding YES.** Our analysis reveals that the longer you hold your investments, the higher your probability of making money—regardless of which market you invest in.
 
@@ -15,11 +15,11 @@ This report analyzes 25 years of historical data (January 2000 to December 2025)
 
 | Holding Period | Probability of Positive Returns |
 |----------------|--------------------------------|
-| 1 Year | 47% - 78% (varies by market) |
-| 5 Years | 67% - 89% |
-| 10 Years | 81% - 93% |
-| 15 Years | 81% - 100% |
-| **20 Years** | **88% - 100%** |
+| 1 Year | 49% - 81% (varies by market) |
+| 5 Years | 67% - 86% |
+| 10 Years | 84% - 92% |
+| 15 Years | 88% - 100% |
+| **20 Years** | **98% - 100%** |
 
 **The most important finding:** If you held investments in any of these major indices for 20 years, you had nearly a **100% chance of making money** in most markets.
 
@@ -29,13 +29,13 @@ This report analyzes 25 years of historical data (January 2000 to December 2025)
 
 | Market | Index | Data Period | Trading Days |
 |--------|-------|-------------|--------------|
-| United States | S&P 500 | 2000-2025 | 6,522 |
-| United States | NASDAQ Composite | 2000-2025 | 6,522 |
-| United Kingdom | FTSE 100 | 2000-2025 | 6,551 |
-| Hong Kong | Hang Seng | 2000-2025 | 6,390 |
-| China | Shanghai Composite | 2000-2025 | 6,277 |
-| China | Shenzhen Component | 2000-2025 | 6,279 |
-| China | CSI 300 | 2002-2025 | 5,804 |
+| United States | S&P 500 | 1990-2025 | 9,051 |
+| United States | NASDAQ Composite | 1990-2025 | 9,051 |
+| United Kingdom | FTSE 100 | 1990-2025 | 9,078 |
+| Hong Kong | Hang Seng | 1990-2025 | 8,869 |
+| China | Shanghai Composite | 1990-2025 | 8,538 |
+| China | Shenzhen Component | 1991-2025 | 8,446 |
+| China | CSI 300 | 2002-2025 | 5,805 |
 
 ---
 
@@ -47,57 +47,57 @@ When you invest for just one year, the outcome is highly uncertain:
 
 | Index | Probability of Profit | Best Case | Worst Case |
 |-------|----------------------|-----------|------------|
-| S&P 500 | 75% | +76% | -49% |
-| NASDAQ Composite | 74% | +95% | -61% |
-| FTSE 100 | 64% | +53% | -42% |
-| Hang Seng | 56% | +100% | -63% |
-| Shanghai Composite | 48% | +236% | -69% |
-| Shenzhen Component | 47% | +344% | -69% |
+| S&P 500 | 81% | +76% | -49% |
+| NASDAQ Composite | 79% | +95% | -61% |
+| FTSE 100 | 70% | +53% | -42% |
+| Hang Seng | 63% | +100% | -63% |
+| Shanghai Composite | 54% | +236% | -69% |
+| Shenzhen Component | 49% | +344% | -69% |
 | CSI 300 | 49% | +309% | -69% |
 
-**Key Insight:** In a single year, you essentially have a coin-flip chance of making money in Chinese markets, and even in the more stable US markets, there's a 25-26% chance of losing money.
+**Key Insight:** In a single year, you essentially have a coin-flip chance of making money in Chinese markets, and even in the more stable US markets, there's about a 20% chance of losing money.
 
 ### 5-Year Holding Period: The Tide Begins to Turn
 
 | Index | Probability of Profit | Best Case | Worst Case |
 |-------|----------------------|-----------|------------|
 | S&P 500 | 77% | +173% | -40% |
-| NASDAQ Composite | 90% | +229% | -59% |
-| FTSE 100 | 74% | +92% | -29% |
-| Hang Seng | 66% | +233% | -49% |
-| Shanghai Composite | 68% | +342% | -66% |
-| Shenzhen Component | 64% | +595% | -58% |
+| NASDAQ Composite | 86% | +229% | -59% |
+| FTSE 100 | 75% | +92% | -29% |
+| Hang Seng | 68% | +233% | -49% |
+| Shanghai Composite | 75% | +342% | -66% |
+| Shenzhen Component | 67% | +595% | -58% |
 | CSI 300 | 72% | +426% | -62% |
 
-**Key Insight:** After 5 years, your odds improve significantly. The NASDAQ Composite shows a 90% success rate, and even the more volatile Chinese markets reach 64-72%.
+**Key Insight:** After 5 years, your odds improve significantly. The NASDAQ Composite shows an 86% success rate, and even the more volatile Chinese markets reach 67-75%.
 
 ### 10-Year Holding Period: The Power of Patience
 
 | Index | Probability of Profit | Best Case | Worst Case |
 |-------|----------------------|-----------|------------|
 | S&P 500 | 92% | +304% | -28% |
-| NASDAQ Composite | 93% | +508% | -57% |
-| FTSE 100 | 90% | +102% | -25% |
-| Hang Seng | 81% | +177% | -37% |
-| Shanghai Composite | 84% | +353% | -48% |
-| Shenzhen Component | 77% | +516% | -47% |
+| NASDAQ Composite | 92% | +508% | -57% |
+| FTSE 100 | 89% | +102% | -25% |
+| Hang Seng | 88% | +177% | -37% |
+| Shanghai Composite | 90% | +353% | -48% |
+| Shenzhen Component | 84% | +516% | -47% |
 | CSI 300 | 90% | +492% | -38% |
 
-**Key Insight:** At 10 years, you have over 77% probability of profit in ALL markets. The worst-case scenarios also improve dramatically—maximum losses shrink from -61% to around -25% to -57%.
+**Key Insight:** At 10 years, you have over 84% probability of profit in ALL markets. The worst-case scenarios also improve dramatically—maximum losses shrink from -61% to around -25% to -57%.
 
 ### 15-Year Holding Period: Near Certainty Emerges
 
 | Index | Probability of Profit | Best Case | Worst Case |
 |-------|----------------------|-----------|------------|
 | S&P 500 | **100%** | +552% | +24% |
-| NASDAQ Composite | 99% | +962% | -12% |
+| NASDAQ Composite | 100% | +962% | -12% |
 | FTSE 100 | 98% | +122% | -8% |
-| Hang Seng | 80% | +245% | -39% |
-| Shanghai Composite | 85% | +201% | -51% |
-| Shenzhen Component | 78% | +399% | -47% |
+| Hang Seng | 90% | +245% | -39% |
+| Shanghai Composite | 92% | +201% | -51% |
+| Shenzhen Component | 88% | +399% | -47% |
 | CSI 300 | 89% | +429% | -34% |
 
-**Key Insight:** The S&P 500 reaches 100% success rate at 15 years—meaning there has NEVER been a 15-year period where you would have lost money. Even the worst-case scenario is a +24% gain!
+**Key Insight:** The S&P 500 and NASDAQ reach 100% success rate at 15 years—meaning there has NEVER been a 15-year period where you would have lost money in US markets. Even the worst-case scenario for S&P 500 is a +24% gain!
 
 ### 20-Year Holding Period: Time Conquers All
 
@@ -105,7 +105,7 @@ When you invest for just one year, the outcome is highly uncertain:
 |-------|----------------------|----------------|----------------|
 | S&P 500 | **100%** | +288% | **+57%** |
 | NASDAQ Composite | **100%** | +609% | **+57%** |
-| FTSE 100 | 95% | +51% | -23% |
+| FTSE 100 | 98% | +51% | -23% |
 | Hang Seng | **100%** | +79% | **+15%** |
 | Shanghai Composite | **100%** | +114% | **+32%** |
 | Shenzhen Component | **100%** | +228% | **+96%** |
@@ -122,11 +122,11 @@ When you invest for just one year, the outcome is highly uncertain:
 ```
 Holding Period →   1yr    5yr    10yr   15yr   20yr
                    ↓      ↓      ↓      ↓      ↓
-S&P 500           75% → 77% → 93% → 100% → 100%
-NASDAQ Composite  74% → 90% → 93% →  99% → 100%
-Hang Seng         56% → 67% → 81% →  83% → 100%
-Shanghai          47% → 70% → 86% →  87% → 100%
-CSI 300           50% → 77% → 91% →  89% → 100%
+S&P 500           81% → 77% → 92% → 100% → 100%
+NASDAQ Composite  79% → 86% → 92% → 100% → 100%
+Hang Seng         63% → 68% → 88% →  90% → 100%
+Shanghai          54% → 75% → 90% →  92% → 100%
+CSI 300           49% → 72% → 90% →  89% → 100%
 ```
 
 ### The Shrinking Range of Outcomes
@@ -195,7 +195,7 @@ A diversified portfolio across regions can smooth your journey.
 > **"In the short run, the market is a voting machine. In the long run, it is a weighing machine."**
 > — Benjamin Graham
 
-Our 25-year analysis across 7 major global indices proves this wisdom:
+Our 35-year analysis across 7 major global indices proves this wisdom:
 
 1. **Short-term investing is gambling** — 1-year returns are essentially unpredictable
 2. **Medium-term investing is risky** — 5-year returns favor you, but losses are still possible
@@ -214,8 +214,8 @@ If you can commit to holding your investments for 20 years:
 
 ## Methodology Notes
 
-- **Data Period:** January 1, 2000 to December 8, 2025 (CSI 300 from January 2002)
-- **Data Sources:** Yahoo Finance, AkShare
+- **Data Period:** January 1, 1990 to December 9, 2025 (Shanghai Composite from December 1990, Shenzhen Component from April 1991, CSI 300 from January 2002)
+- **Data Sources:** Yahoo Finance (US, UK, Hong Kong), AkShare (China indices)
 - **Calculation Method:** Rolling returns for each holding period
 - **Returns:** Price returns (dividends not included; actual returns would be higher)
 
@@ -223,7 +223,7 @@ If you can commit to holding your investments for 20 years:
 
 ## Disclaimer
 
-This analysis is for educational purposes only. Past performance does not guarantee future results. However, the patterns observed across 25 years and 7 different markets provide strong evidence for the benefits of long-term investing. Always consult with a qualified financial advisor before making investment decisions.
+This analysis is for educational purposes only. Past performance does not guarantee future results. However, the patterns observed across 35 years and 7 different markets provide strong evidence for the benefits of long-term investing. Always consult with a qualified financial advisor before making investment decisions.
 
 ---
 
