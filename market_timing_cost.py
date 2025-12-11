@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from datetime import datetime
 
-def analyze_market_timing_cost(csv_file='market_indices_data.csv', index_name='S&P 500', initial_investment=10000):
+def analyze_market_timing_cost(csv_file='market_indices_data.csv', index_name='S&P 500 (US)', initial_investment=10000):
     """
     Analyze the cost of missing the best trading days
     

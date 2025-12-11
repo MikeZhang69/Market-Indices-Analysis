@@ -20,17 +20,17 @@ class MarketIndexAnalyzer:
     def __init__(self):
         # Major world market indices for long-term analysis (Yahoo Finance)
         self.yf_indices = {
-            '^GSPC': 'S&P 500',           # US - Standard & Poor's 500
-            '^IXIC': 'NASDAQ Composite',    # US - Nasdaq Composite Index
-            '^FTSE': 'FTSE 100',           # UK - Financial Times Stock Exchange 100
-            '^HSI': 'Hang Seng',           # Hong Kong - Hang Seng Index
-            '^N225': 'Nikkei 225',          # Japan - Nikkei 225
-            '^GSPTSE': 'S&P/TSX Composite', # Canada - S&P/TSX Composite
-            '^KLSE': 'FTSE Bursa Malaysia KLCI',  # Malaysia - FBM KLCI (primary ticker)
-            '^FCHI': 'CAC 40',             # France - CAC 40
-            '^GDAXI': 'DAX',               # Germany - DAX
-            '^STI': 'Straits Times Index', # Singapore - STI
-            '^AXJO': 'S&P/ASX 200',        # Australia - S&P/ASX 200
+            '^GSPC': 'S&P 500 (US)',           # US - Standard & Poor's 500
+            '^IXIC': 'NASDAQ Composite (US)',    # US - Nasdaq Composite Index
+            '^FTSE': 'FTSE 100 (UK)',           # UK - Financial Times Stock Exchange 100
+            '^HSI': 'Hang Seng (HK)',           # Hong Kong - Hang Seng Index
+            '^N225': 'Nikkei 225 (JP)',          # Japan - Nikkei 225
+            '^GSPTSE': 'S&P/TSX Composite (CA)', # Canada - S&P/TSX Composite
+            '^KLSE': 'FTSE Bursa Malaysia KLCI (MY)',  # Malaysia - FBM KLCI (primary ticker)
+            '^FCHI': 'CAC 40 (FR)',             # France - CAC 40
+            '^GDAXI': 'DAX (German)',               # Germany - DAX
+            '^STI': 'Straits Times Index (SG)', # Singapore - STI
+            '^AXJO': 'S&P/ASX 200 (AU)',        # Australia - S&P/ASX 200
         }
         # Optional Yahoo Finance fallback tickers for select indices
         self.yf_fallbacks = {
@@ -38,14 +38,14 @@ class MarketIndexAnalyzer:
         }
         # China indices via AkShare (better historical data)
         self.akshare_china_indices = {
-            'sh000001': 'Shanghai Composite',  # China - Shanghai Composite Index
-            'sz399001': 'Shenzhen Component',  # China - Shenzhen Component Index
-            'sh000300': 'CSI 300',             # China - CSI 300 Index
+            'sh000001': 'Shanghai Composite (CN)',  # China - Shanghai Composite Index
+            'sz399001': 'Shenzhen Component (CN)',  # China - Shenzhen Component Index
+            'sh000300': 'CSI 300 (CN)',             # China - CSI 300 Index
         }
         # US indices via AkShare (backup/alternative source)
         self.akshare_us_indices = {
-            '.INX': 'S&P 500',             # S&P 500 via Sina
-            '.IXIC': 'NASDAQ Composite',    # NASDAQ Composite via Sina
+            '.INX': 'S&P 500 (US)',             # S&P 500 via Sina
+            '.IXIC': 'NASDAQ Composite (US)',    # NASDAQ Composite via Sina
         }
         self.data = pd.DataFrame()
         self.start_date = '1950-09-07'
@@ -101,6 +101,35 @@ class MarketIndexAnalyzer:
             print(f"Loading data from local file: {csv_file}")
             try:
                 self.data = pd.read_csv(csv_file, index_col=0, parse_dates=True)
+                
+                # Migration logic: Rename old columns to new names with country codes
+                # This handles data loaded from existing CSVs without needing to re-fetch
+                migration_map = {
+                    'S&P 500': 'S&P 500 (US)',
+                    'NASDAQ Composite': 'NASDAQ Composite (US)',
+                    'FTSE 100': 'FTSE 100 (UK)',
+                    'Hang Seng': 'Hang Seng (HK)',
+                    'Nikkei 225': 'Nikkei 225 (JP)',
+                    'S&P/TSX Composite': 'S&P/TSX Composite (CA)',
+                    'FTSE Bursa Malaysia KLCI': 'FTSE Bursa Malaysia KLCI (MY)',
+                    'CAC 40': 'CAC 40 (FR)',
+                    'DAX': 'DAX (German)',
+                    'Straits Times Index': 'Straits Times Index (SG)',
+                    'S&P/ASX 200': 'S&P/ASX 200 (AU)',
+                    'Shanghai Composite': 'Shanghai Composite (CN)',
+                    'Shenzhen Component': 'Shenzhen Component (CN)',
+                    'CSI 300': 'CSI 300 (CN)'
+                }
+                
+                renamed_cols = {}
+                for col in self.data.columns:
+                    if col in migration_map:
+                        renamed_cols[col] = migration_map[col]
+                
+                if renamed_cols:
+                    print(f"Migrating {len(renamed_cols)} columns to new format (adding country codes)...")
+                    self.data.rename(columns=renamed_cols, inplace=True)
+                
                 print(f"Loaded {len(self.data.columns)} indices with {len(self.data)} rows.")
                 return self.data
             except Exception as e:
@@ -495,10 +524,10 @@ class MarketIndexAnalyzer:
         """Save the fetched data to CSV for further analysis"""
         # Reorder columns as requested
         desired_order = [
-            'Shanghai Composite', 'Shenzhen Component', 'CSI 300',
-            'Nikkei 225', 'S&P/TSX Composite', 'FTSE Bursa Malaysia KLCI',
-            'CAC 40', 'DAX', 'Straits Times Index', 'S&P/ASX 200',
-            'S&P 500', 'NASDAQ Composite', 'FTSE 100', 'Hang Seng'
+            'Shanghai Composite (CN)', 'Shenzhen Component (CN)', 'CSI 300 (CN)',
+            'Nikkei 225 (JP)', 'S&P/TSX Composite (CA)', 'FTSE Bursa Malaysia KLCI (MY)',
+            'CAC 40 (FR)', 'DAX (German)', 'Straits Times Index (SG)', 'S&P/ASX 200 (AU)',
+            'S&P 500 (US)', 'NASDAQ Composite (US)', 'FTSE 100 (UK)', 'Hang Seng (HK)'
         ]
         
         # Filter to include only columns that actually exist in the fetched data
@@ -587,7 +616,7 @@ if __name__ == "__main__":
         from market_timing_cost import analyze_market_timing_cost
         analyze_market_timing_cost(
             csv_file='market_indices_data.csv',
-            index_name='S&P 500',
+            index_name='S&P 500 (US)',
             initial_investment=10000
         )
     except Exception as e:
