@@ -1,0 +1,21 @@
+{
+  "name": "market-indices-analysis",
+  "version": "1.0.0",
+  "description": "Market Indices Analysis - A comprehensive analysis tool for studying long-term market index performance",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/index.html",
+    "start": "live-server --port=3000 --open=/index.html"
+  },
+  "keywords": [
+    "market",
+    "analysis",
+    "indices",
+    "investment"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
+
